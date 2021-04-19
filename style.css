@@ -1,66 +1,74 @@
-html,
 body {
     margin: 0;
     padding: 0;
-    width: 100%;
-    height: 100%;
-    color: #fff;
-    background: #161616;
-    overflow: hidden;
 }
 
-.block {
+body::-webkit-scrollbar {
+    display: none;
+    overflow-y: hidden;
+}
+
+.slide {
     position: relative;
-    width: 580px;
-    height: 460px;
-    margin: 10px 300px 20px 80px;
+    top:0;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
 }
 
-h1 {
-    position: absolute;
-    font-family: "Monument Extended";
-    font-weight: lighter;
-    font-size: 64px;
+.wrapper {
+    display: flex;
+    flex-direction: row;
+    width: 400vw;
 }
-
-.block-1 {
-    background: url(img-one.jpg) no-repeat 50% 50%;
+.one {
+    background-image: url(e51b2f153492ca7b55789c59c802d013.png);
+    background-position: center center;
+    background-repeat: no-repeat;
+    /*
+    background-attachment: fixed;
+    */
     background-size: cover;
+    background-color:#464646;
 }
-
-.block-2 {
-    background: url(img-one.jpg) no-repeat 50% 50%;
+.two {
+    background-image: url(87l68vve3f611.jpg);
+    background-position: center center;
+    background-repeat: no-repeat;
+    /*
+    background-attachment: fixed;
+    */
     background-size: cover;
+    background-color:#464646;
 }
-
-.block-3 {
-    background: url(img-one.jpg) no-repeat 50% 50%;
-    background-size: cover;
+.three {
+    background: #0bbaa0;
 }
-
-.block-4 {
-    background: url(img-one.jpg) no-repeat 50% 50%;
-    background-size: cover;
+.four {
+    background: black;
 }
-
-.block-5 {
-    background: url(img-one.jpg) no-repeat 50% 50%;
-    background-size: cover;
-}
-
-.container {
-    margin-top: 200px;
-    margin-left: 200px;
-}
-
-.block-1 h1,
-.block-3 h1,
-.block-5 h1 {
+.actor
+{
+    position: fixed;
     bottom: 0;
-    right: -60px;
+    left: 10vh;
+    height: 20vh;
+    background-color: yellow;
+    width: 20vh;
 }
 
-.block-2 h1,
-.block-4 h1 {
-    right: -60px;
+
+
+@media only screen and (max-width: 480px) {
+    .body
+    {
+        overflow-y: hidden;
+    }
+    .one {
+        background-image: url(e51b2f153492ca7b55789c59c802d013.png);
+    }
+    .two {
+        background-image: url(87l68vve3f611.jpg);
+    }
+
 }
