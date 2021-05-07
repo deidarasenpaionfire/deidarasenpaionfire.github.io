@@ -1,0 +1,339 @@
+@import url('https://fonts.googleapis.com/css2?family=Oswald&family=Petit+Formal+Script&display=swap');
+
+html
+{
+    scroll-behavior: smooth;
+
+}
+* {
+    box-sizing: border-box;
+}
+body {
+    display: flex;
+    min-height: 100vh;
+    flex-direction: row;
+    margin: 0;
+}
+#pocetok
+{
+    text-align: center;
+    display:    inline-table;
+    position:   fixed;
+    top: 5%;
+    left: 48%;
+    z-index: 999;
+}
+#pocetok img
+{
+    margin:0 auto;
+}
+.col{
+    display: flex;
+    flex-direction: column;
+    flex: 5;
+}
+.content {
+    display: flex;
+    height:100vh;
+    flex-direction: row;
+    background-color:#BD80FA;
+}
+.content > article {
+    flex: 1;
+    min-height: 60vh;
+}
+header, footer {
+    background: yellowgreen;
+    height: 20vh;
+}
+header, footer, article, nav {
+    padding: 1em;
+}
+#prvo
+{
+    background-color: black;
+    height: 85vh;
+    align-items: center;
+    text-align: center;
+}
+#prvo h1
+{
+    padding-top: 15vh;
+    color: snow;
+    line-height: 7vh;
+    font-size: 6vh;
+}
+.head1
+{
+    font-family: 'Oswald', sans-serif;
+    letter-spacing: 0.1em;
+}
+.head2
+{
+    font-weight: 300;
+    font-family: 'Petit Formal Script', cursive;
+}
+.head3
+{
+    font-family: 'Oswald', sans-serif;
+    letter-spacing: 0.1em;
+}
+#vtoro
+{
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-color:#83B0A2;
+    border-bottom: 1px solid white;
+}
+#cetvrto
+{
+    position: relative;
+    display: block;
+    background-image: url("glow (3).png");
+    background-position: center center;
+    background-repeat: repeat;
+    background-size: 50%;
+    /*
+    background-attachment: fixed;
+    */
+
+    background-color:#000000;
+    border-bottom: 1px solid white;
+}
+.list
+{
+    position: absolute;
+    text-align: right;
+    margin: 0;
+    padding: 0;
+    top:20%;
+    right: 5%;
+    color: #f2f2f2;
+    font-size: 3vh;
+    list-style-type:none
+}
+#slikaRaka
+{
+    position: absolute;
+    display: block;
+    margin: 0;
+    bottom: 0;
+    left: -20%;
+    width:70%;
+    height:auto;
+}
+#slikamoi
+{
+    position: absolute;
+    display: block;
+    margin: 0;
+    bottom: 0;
+    left: -20%;
+    width:70%;
+    height:auto;
+}
+.levo
+{
+    text-align: center;
+    font-size: 1em;
+    /*writing-mode: vertical-rl;
+    padding: 1em;
+    text-orientation: mixed;*/
+    color: #f2f2f2;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 7vh;
+    height: 100%;
+    background-color: black;
+    border-right: 0.05em solid white;
+    z-index: 10;
+    display: none;
+}
+.desno
+{
+    text-align: center;
+    font-size: 1em;
+  /*  writing-mode: vertical-rl;
+    padding: 1em;
+    text-orientation: mixed;*/
+    color: #f2f2f2;
+    position: fixed;
+    top: 0;
+    right: 0;
+    width: 7vh;
+    height: 100%;
+    background-color: black;
+    border-left: 0.05em solid white;
+    z-index: 10;
+    display: none;
+}
+.desno a
+{
+    position: absolute;
+    left: 0;
+    top:45%;
+    writing-mode: vertical-rl;
+    padding: 1em;
+    text-orientation: mixed;
+    text-decoration: none;
+    color: white;
+}
+.levo a
+{
+    position: absolute;
+    left: 0;
+    top:45%;
+    writing-mode: vertical-lr;
+    padding: 1em;
+    text-orientation: mixed;
+    text-decoration: none;
+    color: white;
+    transform: rotate(180deg);
+}
+
+#DesnoM
+{
+    font-size: 1vh;
+    text-align: center;
+    color: #f2f2f2;
+    position: fixed;
+    margin: 45vh 0 auto auto;
+    right: 0;
+    top:0;
+    width: 2vh;
+    height: 10vh;
+    background-color: black;
+    border:0.01vh solid white;
+    border-right: none;
+    /*border-radius: 20% 0 0 20%;*/
+    z-index: 10;
+}
+
+#DesnoM a
+{
+    margin: 0;/*eden*/
+    margin-top: auto;
+    margin-right: 0;
+    position: absolute;
+    right:0;
+    top:0;
+    writing-mode: vertical-rl;
+    padding: 2vh;
+    padding-right: 0;
+    text-orientation: mixed;
+    text-decoration: none;
+    color: white;
+}
+
+#LevoM
+{
+    font-size: 1vh;
+    text-align: center;
+    color: #f2f2f2;
+    position: fixed;
+    margin: 45vh 0 auto auto;
+    left: 0;
+    top:0;
+    width: 2vh;
+    height: 10vh;
+    background-color: black;
+    border:0.01vh solid white;
+    border-left: none;
+    /*border-radius: 20% 0 0 20%;*/
+    z-index: 10;
+
+}
+
+#LevoM a
+{
+    margin: 0;
+    margin-top: auto;
+    margin-left: 0;
+    position: absolute;
+    left:0;
+    top:0;
+    writing-mode: vertical-rl;
+    padding: 2vh;
+    padding-right: 0;
+    text-orientation: mixed;
+    text-decoration: none;
+    color: white;
+    transform: rotate(180deg);
+}
+#error1
+{
+    background-color: orange;
+    height: 100vh;
+    align-items: center;
+    text-align: right;
+}
+#error1 h1
+{
+    padding-top: 10vh;
+    color: snow;
+    line-height: 7vh;
+    font-size: 3vh;
+    font-family: 'Oswald', sans-serif;
+    letter-spacing: 0.1em;
+    z-index: 100;
+}
+.shout
+{
+    font-size: 12vh;
+}
+#bakugo
+{
+    position: absolute;
+    display: block;
+    margin: 0;
+    bottom: 0;
+    left: -20%;
+    width:70%;
+    height:auto;
+}
+
+@media only screen and (min-device-width : 1080px) {
+    .desno {
+        display: block;
+    }
+
+    .levo {
+        display: block;
+    }
+    #prvo h1
+    {
+
+        font-size: 12vh;
+
+    }
+   /* .head1
+    {
+        font-size: 9vh;
+    }*/
+    #slikaRaka
+    {
+        left: 0;
+        width:30%;
+        height:auto;
+    }
+    #bakugo
+    {
+        left: 0;
+        width:30%;
+        height:auto;
+    }
+    #error1
+    {
+        align-items: center;
+        text-align: center;
+    }
+    #error1 h1 {
+        padding-top: 15vh;
+    }
+    .Mob
+    {
+        display: none;
+    }
+}
