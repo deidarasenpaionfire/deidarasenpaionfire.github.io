@@ -285,7 +285,7 @@ header, footer, article, nav {
 }
 #bakugo
 {
-    position: absolute;
+    position: fixed;
     display: block;
     margin: 0;
     bottom: 0;
