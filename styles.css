@@ -108,9 +108,7 @@ header, footer, article, nav {
     left: 0;
     width: 90%;
     height: auto;
-    /*
-    display: none;
-    */
+    display: block;
 }
 .welcoming
 {
@@ -132,6 +130,15 @@ header, footer, article, nav {
     background-size: 50%;
     background-color:black;
     border-bottom: 1px solid white;
+}
+.walkingCat
+{
+    height: 40%;
+    width: auto;
+    position: absolute;
+    left:0;
+    bottom: -15%;
+    display: none;
 }
 .tretoContainer
 {
@@ -239,15 +246,12 @@ header, footer, article, nav {
     margin: 1vh 0;
 }
 
-.slider8Insides
+.slider8Inside
 {
-    margin-right: 2vh;
     width: 12vh;
     height: 1vh;
     background-color: #83B0A2;
-    margin-top: 1vh;
-    margin-bottom: 1vh;
-
+    margin: 1vh 0;
 }
 .interesi
 {
@@ -386,8 +390,146 @@ header, footer, article, nav {
     color: white;
     transform: rotate(180deg);
 }
+#pet
+{
+    position: relative;
+    background-position: center center;
+    background-repeat: repeat;
+    background-size: 50%;
+    background-color:black;
+    border-bottom: 1px solid white;
+    display: flex;
+    flex-direction: column;
+}/*
+.contactt
+{
+    height: 20vh;
+    width: 100%;
+    background-color: #000000;
+    font-family: 'Oswald', sans-serif;
+    color: white;
+    text-align: center;
+    padding: 7vh;
+}
+#pet .behance{
 
-#DesnoM
+    height: 20vh;
+    width: 100%;
+
+}
+.behance img
+{
+    display: block;
+    margin: auto;
+    height: 50%;
+    width: auto;
+    margin-top: 6vh;
+}
+
+#pet .linkedIn{
+
+    height: 20vh;
+    width: 100%;
+    background-color: #000000;
+}
+.linkedIn img
+{
+    display: block;
+    margin: auto;
+    height: 50%;
+    width: auto;
+    margin-top: 6vh;
+}
+#pet .Instagram{
+
+    height: 20vh;
+    width: 100%;
+    background-color: #C13584;
+}
+.Instagram img
+{
+    display: block;
+    margin: auto;
+    height: 50%;
+    width: auto;
+    margin-top: 6vh;
+}
+#pet .mail{
+
+    height: 20vh;
+    width: 100%;
+    background-color: #83B0A2;
+}
+.mail img
+{
+    display: block;
+    margin: auto;
+    height: 50%;
+    width: auto;
+    margin-top: 6vh;
+}*/
+.c1
+{
+    position: relative;
+    height: 40vh;
+    width: 100%;
+    background-color: #83B0A2;
+}
+.c2
+{
+    height: 40vh;
+    width: 100%;
+    background-color: #83B0A2;
+}
+.behance {
+    float: left;
+    width: 50%;
+    height: 40vh;
+    background-color: #053eff;
+}
+
+.linkedIn
+{
+    float: left;
+    width: 50%;
+    height: 40vh;
+    background-color: #000000;
+    border: 1px solid black;
+}
+
+.Instagram
+{
+    float: left;
+    width: 50%;
+    height: 40vh;
+    background-color: #ffffff;
+}
+
+.mail
+{
+    float: left;
+    width: 50%;
+    height: 40vh;
+    background-color: #83B0A2;
+}
+.c1 img,.c2 img {
+    display: block;
+    margin: auto;
+    height: 20%;
+    width: auto;
+    margin-top: 16vh;
+}
+.contactt
+{
+    height: 20vh;
+    width: 100%;
+    background-color: #000000;
+    font-family: 'Oswald', sans-serif;
+    color: white;
+    text-align: center;
+    padding: 7vh;
+}
+/*#DesnoM
 {
     font-size: 1vh;
     text-align: center;
@@ -401,13 +543,13 @@ header, footer, article, nav {
     background-color: black;
     border:0.01vh solid white;
     border-right: none;
-    /*border-radius: 20% 0 0 20%;*/
+    !*border-radius: 20% 0 0 20%;*!
     z-index: 10;
 }
 
 #DesnoM a
 {
-    margin: 0;/*eden*/
+    margin: 0;!*eden*!
     margin-top: auto;
     position: absolute;
     right:0;
@@ -433,7 +575,7 @@ header, footer, article, nav {
     background-color: black;
     border:0.01vh solid white;
     border-left: none;
-    /*border-radius: 20% 0 0 20%;*/
+    !*border-radius: 20% 0 0 20%;*!
     z-index: 10;
 
 }
@@ -451,7 +593,7 @@ header, footer, article, nav {
     text-decoration: none;
     color: white;
     transform: rotate(180deg);
-}
+}*/
 #error1
 {
     width: 100%;
@@ -610,5 +752,13 @@ header, footer, article, nav {
         /*
         text-transform: lowercase;
         */
+    }
+    .walkingCat
+    {
+        display: none;
+    }
+    .c1 img,.c2 img {
+        height: 50%;
+        margin-top: 10vh;
     }
 }
