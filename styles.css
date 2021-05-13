@@ -139,7 +139,7 @@ header, footer, article, nav {
 {
     position: absolute;
     display: block;
-    top: 12vh;
+    top: 20vh;
     right: 0;
     width: 100%;
     height: 70%;
@@ -264,12 +264,9 @@ header, footer, article, nav {
     display: block;
     background-image: url("glow (3).png");
     background-position: center center;
-    background-repeat: repeat;
-    background-size: 50%;
-    /*
-    background-attachment: fixed;
-    */
 
+    background-repeat: repeat;
+    background-size: 130%;
     background-color:#000000;
     border-bottom: 1px solid white;
 }
@@ -548,6 +545,9 @@ header, footer, article, nav {
     {
         font-family: 'Oswald', sans-serif;
         letter-spacing: 0.1em;
+    }
+    #cetvrto {
+        background-size: 50%;
     }
     .list
     {
