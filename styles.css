@@ -92,6 +92,16 @@ header, footer, article, nav {
     font-family: 'Oswald', sans-serif;
     letter-spacing: 0.1em;
 }
+
+.scrollDown
+{
+    height: auto;
+    width: 32%;
+    bottom: 15%;
+    left: 34%;
+    position: absolute;
+    z-index: 100;
+}
 #vtoro
 {
     position: relative;
@@ -100,6 +110,22 @@ header, footer, article, nav {
     background-size: cover;
     background-color:#83B0A2;
     border-bottom: 1px solid white;
+    padding: 0;
+}
+
+.wrinkled
+{
+    opacity: 0.1;
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    display: block;
+    overflow: hidden;
+    z-index: 7;
+    pointer-events: none;
+
 }
 .mojaSlika
 {
@@ -109,6 +135,8 @@ header, footer, article, nav {
     width: 90%;
     height: auto;
     display: block;
+    z-index: 6;
+
 }
 .welcoming
 {
@@ -117,7 +145,7 @@ header, footer, article, nav {
     position: absolute;
     right:0;
     top:15vh;
-    font-size: 2.5vh;
+    font-size: 2.7vh;
     padding-left: 15vh;
     padding-right: 2vh;
 }
@@ -310,6 +338,7 @@ header, footer, article, nav {
     left: -20%;
     width:70%;
     height:auto;
+    pointer-events: none;
 }
 #dragonfly
 {
@@ -320,6 +349,7 @@ header, footer, article, nav {
     right: 0;
     width:60%;
     height:auto;
+    pointer-events: none;
 }
 /*#slikamoi
 {
@@ -400,74 +430,7 @@ header, footer, article, nav {
     border-bottom: 1px solid white;
     display: flex;
     flex-direction: column;
-}/*
-.contactt
-{
-    height: 20vh;
-    width: 100%;
-    background-color: #000000;
-    font-family: 'Oswald', sans-serif;
-    color: white;
-    text-align: center;
-    padding: 7vh;
 }
-#pet .behance{
-
-    height: 20vh;
-    width: 100%;
-
-}
-.behance img
-{
-    display: block;
-    margin: auto;
-    height: 50%;
-    width: auto;
-    margin-top: 6vh;
-}
-
-#pet .linkedIn{
-
-    height: 20vh;
-    width: 100%;
-    background-color: #000000;
-}
-.linkedIn img
-{
-    display: block;
-    margin: auto;
-    height: 50%;
-    width: auto;
-    margin-top: 6vh;
-}
-#pet .Instagram{
-
-    height: 20vh;
-    width: 100%;
-    background-color: #C13584;
-}
-.Instagram img
-{
-    display: block;
-    margin: auto;
-    height: 50%;
-    width: auto;
-    margin-top: 6vh;
-}
-#pet .mail{
-
-    height: 20vh;
-    width: 100%;
-    background-color: #83B0A2;
-}
-.mail img
-{
-    display: block;
-    margin: auto;
-    height: 50%;
-    width: auto;
-    margin-top: 6vh;
-}*/
 .c1
 {
     position: relative;
@@ -486,6 +449,8 @@ header, footer, article, nav {
     width: 50%;
     height: 40vh;
     background-color: #053eff;
+    transition: 800ms;
+
 }
 
 .linkedIn
@@ -495,6 +460,8 @@ header, footer, article, nav {
     height: 40vh;
     background-color: #000000;
     border: 1px solid black;
+    transition: 800ms;
+
 }
 
 .Instagram
@@ -502,7 +469,8 @@ header, footer, article, nav {
     float: left;
     width: 50%;
     height: 40vh;
-    background-color: #ffffff;
+    background-color: #D0D0D0;
+    transition: 800ms;
 }
 
 .mail
@@ -511,6 +479,14 @@ header, footer, article, nav {
     width: 50%;
     height: 40vh;
     background-color: #83B0A2;
+    transition: 800ms;
+}
+.mail:hover, .behance:hover, .Instagram:hover, .linkedIn:hover
+{
+    background-color: #ffffff;
+    -webkit-transition: background-color 800ms linear;
+    transition: background-color 800ms linear;
+
 }
 .c1 img,.c2 img {
     display: block;
@@ -529,71 +505,7 @@ header, footer, article, nav {
     text-align: center;
     padding: 7vh;
 }
-/*#DesnoM
-{
-    font-size: 1vh;
-    text-align: center;
-    color: #f2f2f2;
-    position: fixed;
-    margin: 45vh 0 auto auto;
-    right: 0;
-    top:0;
-    width: 2vh;
-    height: 10vh;
-    background-color: black;
-    border:0.01vh solid white;
-    border-right: none;
-    !*border-radius: 20% 0 0 20%;*!
-    z-index: 10;
-}
 
-#DesnoM a
-{
-    margin: 0;!*eden*!
-    margin-top: auto;
-    position: absolute;
-    right:0;
-    top:0;
-    writing-mode: vertical-rl;
-    padding: 2vh 0 2vh 2vh;
-    text-orientation: mixed;
-    text-decoration: none;
-    color: white;
-}
-
-#LevoM
-{
-    font-size: 1vh;
-    text-align: center;
-    color: #f2f2f2;
-    position: fixed;
-    margin: 45vh 0 auto auto;
-    left: 0;
-    top:0;
-    width: 2vh;
-    height: 10vh;
-    background-color: black;
-    border:0.01vh solid white;
-    border-left: none;
-    !*border-radius: 20% 0 0 20%;*!
-    z-index: 10;
-
-}
-
-#LevoM a
-{
-    margin: auto 0 0;
-    position: absolute;
-    left:0;
-    top:0;
-    writing-mode: vertical-rl;
-    padding: 2vh;
-    padding-right: 0;
-    text-orientation: mixed;
-    text-decoration: none;
-    color: white;
-    transform: rotate(180deg);
-}*/
 #error1
 {
     width: 100%;
@@ -687,6 +599,15 @@ header, footer, article, nav {
         font-family: 'Oswald', sans-serif;
         letter-spacing: 0.1em;
     }
+    .scrollDown
+    {
+        height: auto;
+        width: 10%;
+        bottom: 10%;
+        left: 45%;
+        position: absolute;
+        z-index: 100;
+    }
     #cetvrto {
         background-size: 50%;
     }
@@ -739,13 +660,13 @@ header, footer, article, nav {
 
         width: 50%;
         height: auto;
+        pointer-events: none;
     }
     .welcoming
     {
-
         right:0;
         top:15vh;
-        font-size: 2.5vh;
+        font-size: 3vh;
         padding-left: 120vh;
         padding-right: 10vh;
         line-height: 2;
