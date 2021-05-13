@@ -14,14 +14,28 @@ body {
     flex-direction: row;
     margin: 0;
 }
-#pocetok
+.nav
+{
+    padding: 1vh;
+    width: 100%;
+    position: fixed;
+    display: flex;
+    justify-content: center;
+    z-index: 100;
+
+}
+#topce
 {
     text-align: center;
-    display:    inline-table;
-    position:   fixed;
-    top: 5%;
-    left: 48%;
+    display:    block;
     z-index: 999;
+    margin: 0;
+    padding: 0;
+}
+.blank
+{
+    height: 1vh;
+    width: 1vh;
 }
 #pocetok img
 {
@@ -80,11 +94,24 @@ header, footer, article, nav {
 }
 #vtoro
 {
+    position: relative;
     background-position: center center;
     background-repeat: no-repeat;
     background-size: cover;
     background-color:#83B0A2;
     border-bottom: 1px solid white;
+}
+p
+{
+    font-family: 'Oswald', sans-serif;
+    text-align: right;
+    position: absolute;
+    right:0;
+    top:15vh;
+    font-size: 2vh;
+    padding-left: 15vh;
+    padding-right: 2vh;
+
 }
 #cetvrto
 {
@@ -106,13 +133,26 @@ header, footer, article, nav {
     position: absolute;
     text-align: right;
     margin: 0;
-    padding: 0;
-    top:20%;
-    right: 5%;
+    /*
+    padding:10vh; pc version
+    */
+    padding-top: 20vh;
+    padding-right: 2vh;
+    top:0;
+    right: 0;
     color: #f2f2f2;
-    font-size: 3vh;
-    list-style-type:none
+    font-size: 2.1vh;
+    list-style-type:none;
 }
+.sel
+{
+    background-color: rgba(0,0,0,0.9);
+}
+.sel:hover
+{
+    background-color: rgba(255,255,255,0.19);
+}
+
 #slikaRaka
 {
     position: absolute;
@@ -123,7 +163,17 @@ header, footer, article, nav {
     width:70%;
     height:auto;
 }
-#slikamoi
+#dragonfly
+{
+    position: absolute;
+    display: block;
+    margin: 0;
+    top: 2vh;
+    right: 0;
+    width:60%;
+    height:auto;
+}
+/*#slikamoi
 {
     position: absolute;
     display: block;
@@ -132,7 +182,7 @@ header, footer, article, nav {
     left: -20%;
     width:70%;
     height:auto;
-}
+}*/
 .levo
 {
     text-align: center;
@@ -293,7 +343,31 @@ header, footer, article, nav {
     width:70%;
     height:auto;
 }
+::-webkit-scrollbar {
+    width: 10px;
+}
 
+::-webkit-scrollbar-track {
+    background: #383838;
+}
+
+
+::-webkit-scrollbar-thumb {
+    background: #000000;
+}
+
+::-webkit-scrollbar-thumb:hover {
+    background: #83B0A2;
+}
+::-moz-selection { /* Code for Firefox */
+    color: #ffffff;
+    background: #83B0A2;
+}
+
+::selection {
+    color: #ffffff;
+    background: #83B0A2;
+}
 @media only screen and (min-device-width : 1080px) {
     .desno {
         display: block;
@@ -304,14 +378,45 @@ header, footer, article, nav {
     }
     #prvo h1
     {
-
-        font-size: 12vh;
-
+        padding-top: 12vh;
+        color: snow;
+        line-height: 13vh;
+        font-size: 15vh;
     }
-   /* .head1
+    .head1
     {
-        font-size: 9vh;
-    }*/
+        font-family: 'Oswald', sans-serif;
+        letter-spacing: 0.1em;
+    }
+    .head2
+    {
+        font-weight: 300;
+        font-family: 'Petit Formal Script', cursive;
+    }
+    .head3
+    {
+        font-family: 'Oswald', sans-serif;
+        letter-spacing: 0.1em;
+    }
+    .list
+    {
+        text-align: justify;
+        padding-top: 7vh;
+        padding-right: 0;
+        top:0;
+        right: 75vh;
+        color: #f2f2f2;
+        font-size: 2.7vh;
+        list-style-type:none;
+    }
+    #dragonfly
+    {
+        margin: 0;
+        top: 0vh;
+        right: 2vh;
+        width:20%;
+        height:auto;
+    }
     #slikaRaka
     {
         left: 0;
