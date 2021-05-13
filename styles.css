@@ -3,7 +3,6 @@
 html
 {
     scroll-behavior: smooth;
-
 }
 * {
     box-sizing: border-box;
@@ -123,7 +122,6 @@ header, footer, article, nav {
     font-size: 2.5vh;
     padding-left: 15vh;
     padding-right: 2vh;
-    letter-spacing: 0.1em;
 }
 #treto
 {
@@ -231,32 +229,39 @@ header, footer, article, nav {
     width: 18vh;
     height: 1vh;
     background-color: #83B0A2;
-    margin: 0;
-    margin-top: 1vh;
-    margin-bottom: 1vh;
+    margin: 1vh 0;
 }
 .slider7Inside
 {
     width: 18vh;
     height: 1vh;
     background-color: #83B0A2;
-    margin: 0;
-    margin-top: 1vh;
-    margin-bottom: 1vh;
+    margin: 1vh 0;
 }
 
-.slider8Inside
+.slider8Insides
 {
     margin-right: 2vh;
     width: 12vh;
     height: 1vh;
     background-color: #83B0A2;
-    margin: 0;
     margin-top: 1vh;
     margin-bottom: 1vh;
 
 }
-
+.interesi
+{
+    position: relative;
+    color: white;
+    font-family: 'Oswald', sans-serif;
+    text-align: center;
+    top: 60vh;
+}
+.interesivnatre
+{
+    font-size: 16px;
+    font-weight: normal;
+}
 
 #cetvrto
 {
@@ -290,10 +295,7 @@ header, footer, article, nav {
 {
     background-color: rgba(0,0,0,0.9);
 }
-.sel:hover
-{
-    background-color: rgba(255,255,255,0.19);
-}
+
 
 #slikaRaka
 {
@@ -407,13 +409,11 @@ header, footer, article, nav {
 {
     margin: 0;/*eden*/
     margin-top: auto;
-    margin-right: 0;
     position: absolute;
     right:0;
     top:0;
     writing-mode: vertical-rl;
-    padding: 2vh;
-    padding-right: 0;
+    padding: 2vh 0 2vh 2vh;
     text-orientation: mixed;
     text-decoration: none;
     color: white;
@@ -440,9 +440,7 @@ header, footer, article, nav {
 
 #LevoM a
 {
-    margin: 0;
-    margin-top: auto;
-    margin-left: 0;
+    margin: auto 0 0;
     position: absolute;
     left:0;
     top:0;
@@ -516,6 +514,7 @@ header, footer, article, nav {
     text-decoration: none;
     color: darkblue;
 }
+
 @media only screen and (min-device-width : 1080px) {
     .desno {
         display: block;
@@ -563,7 +562,7 @@ header, footer, article, nav {
     #dragonfly
     {
         margin: 0;
-        top: 0vh;
+        top: 0;
         right: 2vh;
         width:20%;
         height:auto;
