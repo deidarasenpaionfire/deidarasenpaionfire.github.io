@@ -13,7 +13,7 @@ body {
     flex-direction: row;
     margin: 0;
 }
-.nav
+#nav
 {
     padding: 1vh;
     width: 100%;
@@ -22,7 +22,7 @@ body {
     justify-content: center;
     z-index: 1200;
     flex-direction: row;
-
+    transition: top 0.5s;
 }
 #topce
 {
@@ -602,9 +602,9 @@ header, footer, article, nav {
     .scrollDown
     {
         height: auto;
-        width: 10%;
-        bottom: 10%;
-        left: 45%;
+        width: 6%;
+        bottom: 12%;
+        left: 47%;
         position: absolute;
         z-index: 100;
     }
