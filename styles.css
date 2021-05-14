@@ -91,17 +91,21 @@ body {
     position:fixed;
     top:0;
     background:black;
-    border-bottom: 1px solid white;
     width:51%;
     height:100%;
     z-index:1000;
 }
 
 #loader-wrapper .loader-section.section-left {
-    left:0
+    left:0;
+    border: 1px solid white;
+    border-right: 1px solid transparent;
+
 }
 #loader-wrapper .loader-section.section-right {
     right:0;
+    border: 1px solid white;
+    border-left: 1px solid transparent;
 }
 
 /* Loaded Styles */
