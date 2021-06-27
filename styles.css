@@ -1,5 +1,5 @@
 @import url('https://fonts.googleapis.com/css2?family=Oswald&family=Petit+Formal+Script&display=swap');
-
+/*kom*/
 html
 {
     scroll-behavior: smooth;
@@ -7,7 +7,7 @@ html
 * {
     box-sizing: border-box;
 }
-body {
+body   {
     display: flex;
     min-height: 100vh;
     flex-direction: row;
