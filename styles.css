@@ -144,7 +144,7 @@ body {
 {
     text-align: center;
     display:    block;
-    z-index: 999;
+    z-index: 99999999;
     margin: 0;
     padding: 0;
 }
@@ -453,6 +453,8 @@ h1
     font-size: 3.5vh;
     font-family: 'Oswald', sans-serif;
     z-index: 99999;
+    transition: 800ms;
+
 
 }
 .layer {
@@ -469,6 +471,13 @@ h1
 .cc:hover .layer,.cc2:hover .layer
 {
     background-color: rgba(0, 0, 0, 0.0);
+    -webkit-transition: background-color 800ms linear;
+    transition: background-color 800ms linear;
+}
+.cc:hover .in1,.cc2:hover .in
+{
+background-color: white;
+    color: black;
     -webkit-transition: background-color 800ms linear;
     transition: background-color 800ms linear;
 }
