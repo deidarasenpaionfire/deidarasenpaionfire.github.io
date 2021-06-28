@@ -3,18 +3,59 @@
 
 <head>
     <meta charset="UTF-8">
-    <link rel="shortcut icon" type="image/jpg" href="viber_image_2021-05-01_00-51-21.jpg" />
+    <link rel="shortcut icon" href="images/viber_image_2021-05-01_00-51-21.jpg" type="image/x-icon">
+    <meta name="description" content="Marija Gjorgjjieva's portfolio webpage">
+    <meta name="keywords" content="Marija Gjorgjieva,Marija Gjondeva,Марија Ѓорѓиева,Марија Ѓондева">
     <title>Ein PECH!</title>
     <link rel="stylesheet" href="styles.css">
 </head>
 
 <body>
+    <div class="cursor"></div>
+    <div class="cursor2"></div>
     <main class="content" id="error1">
         <article>
             <img id="bakugo" src="images/baku-8.png" alt="cat">
             <h1><span class="shout">ERROR!</span><br> :/ <br>terribly sorry, we cannot find the page you're looking for <br> go back to <a class="re" href="index.html">HOME</a></h1>
         </article>
     </main>
-</body>
 
+</body>
+<script>
+    var cursor = document.querySelector('.cursor');
+    var cursorinner = document.querySelector('.cursor2');
+    var a = document.querySelectorAll('a');
+
+    document.addEventListener('mousemove', function(e){
+        var x = e.clientX;
+        var y = e.clientY;
+        cursor.style.transform = `translate3d(calc(${e.clientX}px - 50%), calc(${e.clientY}px - 50%), 0)`
+    });
+
+    document.addEventListener('mousemove', function(e){
+        var x = e.clientX;
+        var y = e.clientY;
+        cursorinner.style.left = x + 'px';
+        cursorinner.style.top = y + 'px';
+    });
+
+    document.addEventListener('mousedown', function(){
+        cursor.classList.add('click');
+        cursorinner.classList.add('cursorinnerhover')
+    });
+
+    document.addEventListener('mouseup', function(){
+        cursor.classList.remove('click')
+        cursorinner.classList.remove('cursorinnerhover')
+    });
+
+    a.forEach(item => {
+        item.addEventListener('mouseover', () => {
+            cursor.classList.add('hover');
+        });
+        item.addEventListener('mouseleave', () => {
+            cursor.classList.remove('hover');
+        });
+    })
+</script>
 </html>

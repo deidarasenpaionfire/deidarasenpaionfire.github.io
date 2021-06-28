@@ -1,7 +1,9 @@
 <!DOCTYPE html>
 <head xmlns="http://www.w3.org/1999/html" xmlns="http://www.w3.org/1999/html">
     <meta charset="UTF-8">
-    <title>Portfolio</title>
+    <title>Marija Gjorgjieva</title>
+    <meta name="description" content="Marija Gjorgjjieva's portfolio webpage">
+    <meta name="keywords" content="Marija Gjorgjieva,Marija Gjondeva,Марија Ѓорѓиева,Марија Ѓондева">
     <link rel="shortcut icon" href="images/viber_image_2021-05-01_00-51-21.jpg" type="image/x-icon">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="styles.css">
@@ -19,6 +21,8 @@
     <div class="loader-section section-left"></div>
     <div class="loader-section section-right"></div>
 </div>
+<div class="cursor"></div>
+<div class="cursor2"></div>
 <div class="col">
 
     <main class="content" id="prvo">
@@ -31,7 +35,7 @@
         <article>
             <img class="wrinkled" src="images/wrinkled-brown-paper-1-1024x1009%20(2).jpg" alt="wrinkled" >
             <img class="mojaSlika" src="images/slika4%20(2).png" alt="slika">
-            <p class="welcoming"><b>Welcome to my portfolio!<br> <br>My name is Marija Gjorgjieva</b><br> <br>
+            <p class="welcoming"><b>Hello!<br> <br>My name is Marija Gjorgjieva</b><br> <br>
                 I am a student at the Faculty of Computer Science and Engineering,
                 “Ss. Cyril and Methodius” University, Skopje and I'm studying software engineering and information systems <br> </article></p>
     </main>
@@ -144,14 +148,14 @@
 </style>
 <script>
     var text1 = ["MY NAME IS", "IT'S NICE","PLEASE"];
-    var text2 = ["Marija","having you" ,"scroll down"];
-    var text3= ["GJORGJIEVA", "visit this page" ,"FOR MORE"];
+    var text2 = ["Marija","having" ,"scroll down"];
+    var text3= ["GJORGJIEVA", "YOU HERE" ,"FOR MORE"];
     var counter = 0;
     var elem1 = document.getElementById("head1");
     var elem2 = document.getElementById("head2");
     var elem3 = document.getElementById("head3");
 
-    setInterval(change, 10000);
+    setInterval(change, 7000);
 
     function change() {
         elem1.classList.add('hide');
@@ -172,4 +176,41 @@
             }
         }, 500);
     }
+</script>
+<script>
+    var cursor = document.querySelector('.cursor');
+    var cursorinner = document.querySelector('.cursor2');
+    var a = document.querySelectorAll('a');
+
+    document.addEventListener('mousemove', function(e){
+        var x = e.clientX;
+        var y = e.clientY;
+        cursor.style.transform = `translate3d(calc(${e.clientX}px - 50%), calc(${e.clientY}px - 50%), 0)`
+    });
+
+    document.addEventListener('mousemove', function(e){
+        var x = e.clientX;
+        var y = e.clientY;
+        cursorinner.style.left = x + 'px';
+        cursorinner.style.top = y + 'px';
+    });
+
+    document.addEventListener('mousedown', function(){
+        cursor.classList.add('click');
+        cursorinner.classList.add('cursorinnerhover')
+    });
+
+    document.addEventListener('mouseup', function(){
+        cursor.classList.remove('click')
+        cursorinner.classList.remove('cursorinnerhover')
+    });
+
+    a.forEach(item => {
+        item.addEventListener('mouseover', () => {
+            cursor.classList.add('hover');
+        });
+        item.addEventListener('mouseleave', () => {
+            cursor.classList.remove('hover');
+        });
+    })
 </script>

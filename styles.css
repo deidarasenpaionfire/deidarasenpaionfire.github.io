@@ -1,18 +1,22 @@
 @import url('https://fonts.googleapis.com/css2?family=Oswald&family=Petit+Formal+Script&display=swap');
-/*kom*/
+
 html
 {
     scroll-behavior: smooth;
 }
 * {
     box-sizing: border-box;
+    cursor: none;
+
 }
-body   {
+body {
     display: flex;
     min-height: 100vh;
     flex-direction: row;
     margin: 0;
+
 }
+
 #loader-wrapper {
     position:fixed;
     top:0;
@@ -202,6 +206,10 @@ article, nav {
     letter-spacing: 0.1em;
 }
 
+h1
+{
+    color: white;
+}
 .scrollDown
 {
     height: auto;
@@ -419,7 +427,7 @@ article, nav {
 }
 .sel
 {
-    background-color: rgba(131, 176, 162,0.9);
+    background-color: rgba(0, 0, 0,1);
 }
 
 
@@ -647,11 +655,58 @@ article, nav {
     color: darkblue;
 }
 
+
+.cursor {
+    display: none;
+    z-index: 8888888888;
+    width: 40px;
+    height: 40px;
+    border-radius: 100%;
+    border: 1px solid white;
+    transition: all 200ms ease-out;
+    position: fixed;
+    pointer-events: none;
+    left: 0;
+    top: 0;
+    transform: translate(calc(-50% + 15px), -50%);
+}
+
+.cursor2 {
+    display: none;
+    z-index: 8888888888;
+    width: 2px;
+    height: 2px;
+    border-radius: 100%;
+    background-color: white;
+    opacity: .7;
+    position: fixed;
+    transform: translate(-50%, -50%);
+    pointer-events: none;
+    transition: width .3s, height .3s, opacity .3s;
+}
+
+.hover {
+    background-color: #83B0A2;
+    opacity: 0.5;
+}
+
+.cursorinnerhover {
+    width: 50px;
+    height: 50px;
+    opacity: .5;
+}
+
+
 @media only screen and (min-device-width : 1080px) {
     .desno {
         display: block;
     }
-
+    .cursor
+    {
+        display: block;
+    }
+    .cursor2
+    {display: block}
     .levo {
         display: block;
     }
@@ -666,6 +721,7 @@ article, nav {
     {
         font-family: 'Oswald', sans-serif;
         letter-spacing: 0.1em;
+
     }
     #head2
     {
