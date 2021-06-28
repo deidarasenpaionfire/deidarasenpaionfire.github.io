@@ -258,7 +258,7 @@ h1
 .welcoming
 {
     font-family: 'Oswald', sans-serif;
-    text-align: right;
+    text-align: left;
     position: absolute;
     right:0;
     top:15vh;
@@ -399,6 +399,80 @@ h1
     font-weight: normal;
 }
 
+#gal
+{
+    position: relative;
+    background-position: center center;
+    background-repeat: repeat;
+    background-size: 50%;
+    background-color:black;
+    border-bottom: 1px solid white;
+    display: flex;
+    flex-direction: column;
+
+}
+.cc
+{
+    position: relative;
+    height: 50vh;
+    width: 100%;
+    background-image: url("images/slika (3).jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+
+    background-position: center;
+}
+.cc2
+{
+    position: relative;
+    height: 50vh;
+    width: 100%;
+    background-image: url("images/priem-na-princot-edvard-3 (2).jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: 25% 75%;
+
+}
+.in
+{
+    position: absolute;
+    margin: 13vh;
+    top:12%;
+    color: white;
+    font-size: 3.5vh;
+    font-family: 'Oswald', sans-serif;
+    z-index: 99999;
+
+}
+.in1
+{
+    position: absolute;
+    margin: 13vh;
+    top:16%;
+    color: white;
+    font-size: 3.5vh;
+    font-family: 'Oswald', sans-serif;
+    z-index: 99999;
+
+}
+.layer {
+    background-color: rgba(0, 0, 0, 0.7);
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: 9000;
+    transition: 800ms;
+
+}
+.cc:hover .layer,.cc2:hover .layer
+{
+    background-color: rgba(0, 0, 0, 0.0);
+    -webkit-transition: background-color 800ms linear;
+    transition: background-color 800ms linear;
+}
+
 #cetvrto
 {
     position: relative;
@@ -466,7 +540,7 @@ h1
     height: 100%;
     background-color: black;
     border-right: 0.05em solid white;
-    z-index: 10;
+    z-index: 9999999;
     display: none;
 }
 .desno
@@ -481,7 +555,7 @@ h1
     height: 100%;
     background-color: black;
     border-left: 0.05em solid white;
-    z-index: 10;
+    z-index: 99999999;
     display: none;
 }
 .desno a
@@ -721,6 +795,20 @@ h1
     {
         font-family: 'Oswald', sans-serif;
         letter-spacing: 0.1em;
+
+    }
+    .in
+    {
+        font-size: 9vh;
+        margin: 20vh;
+        top:25%;
+
+    }
+    .in1
+    {
+        font-size: 9vh;
+        margin: 20vh;
+        top:25%;
 
     }
     #head2
