@@ -144,7 +144,7 @@ body {
 {
     text-align: center;
     display:    block;
-    z-index: 99999999;
+    z-index: 99999999999999;
     margin: 0;
     padding: 0;
 }
