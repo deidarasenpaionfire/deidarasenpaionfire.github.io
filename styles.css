@@ -136,7 +136,7 @@ body {
     position: fixed;
     display: flex;
     justify-content: center;
-    z-index: 1200;
+    z-index: 9999999;
     flex-direction: row;
     transition: top 0.5s;
 }
@@ -144,7 +144,7 @@ body {
 {
     text-align: center;
     display:    block;
-    z-index: 99999999999999;
+    z-index: 9000000;
     margin: 0;
     padding: 0;
 }
@@ -441,7 +441,7 @@ h1
     color: white;
     font-size: 3.5vh;
     font-family: 'Oswald', sans-serif;
-    z-index: 99999;
+    z-index: 9999;
 
 }
 .in1
@@ -452,7 +452,7 @@ h1
     color: white;
     font-size: 3.5vh;
     font-family: 'Oswald', sans-serif;
-    z-index: 99999;
+    z-index: 9999;
     transition: 800ms;
 
 
